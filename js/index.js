@@ -115,3 +115,22 @@ contactP[2].textContent = siteContent['contact']['email'];
 let footerP = document.querySelector('footer p');
 
 footerP.textContent = siteContent['footer']['copyright'];
+
+//stretch styling
+let pageSections = document.querySelectorAll('section');
+
+pageSections[0].style.backgroundColor = 'blue';
+
+pageSections[1].style.backgroundColor = 'red';
+
+pageSections[2].style.backgroundColor = 'green';
+
+pageSections.forEach(element => {
+  element.style.color = 'white';
+})
+
+pageSections.forEach(element => {
+  element.style.padding = '2rem';
+})
+
+midImg.style.width = '100%';
